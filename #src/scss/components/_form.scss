@@ -1,0 +1,58 @@
+.form {
+  position: relative;
+  z-index: 2;
+
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btns {}
+
+  &__btns-btn {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &__label {
+    min-width: 120px;
+    margin-right: 4px;
+  }
+
+  &__field {
+    max-width: 196px;
+    width: 100%;
+  }
+
+  &__field--flex {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin: 0 8px;
+    }
+  }
+
+  &__field-code {}
+
+  &__field--radio {
+    .control {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
